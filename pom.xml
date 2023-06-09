@@ -29,6 +29,18 @@
             <artifactId>webdrivermanager</artifactId>
             <version>5.3.2</version>
         </dependency>
-
+        <!--ALTTAKI DE JUNIT DEPENDENCY'SISI test anatasyonlarini kullanabilmek icin indiririz-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
     </dependencies>
 </project>
