@@ -1,15 +1,21 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.junit.Test;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.*;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public abstract class TestBase {
     //testbase class'indan obje olusturulmasinin onune gecilmesi icin abstract YAPABILIRIZ!(zorunluluk degil , secenek)
@@ -82,5 +88,38 @@ public abstract class TestBase {
                         pollingEvery(Duration.ofSeconds(kontrolEtmeSikliigi)).//==> kac saniyede bir kac saniyede bir kontrol edeccegini belirler
                         withMessage("Ignore Exception");// ==> zorunlu degil , hata durumunda mesaj vermesi icin
         wait.until(ExpectedConditions.visibilityOf(locator));
+    }
+    //SwitchTo Window-1
+    public void switchToWindow(int index){
+        List<String> pencereler = new  ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(pencereler.get(index));
+    }
+    //SwitchTo Window-2
+    public void switchToWindow2(int index){
+        driver.switchTo().window(driver.getWindowHandles().toArray()[index].toString());
+    }
+
+    /** FullScreen ScreenShot methodu ; */
+    public void fullScreenScreenShot(){
+        String tarih = new SimpleDateFormat("_hh_mm_ss_ddMMyyyy").format(new Date());
+        String dosyaYolu = "src/test/java/techproed/TumSayfaResmi/screenShot" + tarih + ".jpeg";
+        TakesScreenshot ts = (TakesScreenshot) driver;
+        try {
+            FileUtils.copyFile(ts.getScreenshotAs(OutputType.FILE),new File(dosyaYolu));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**WebElement Resmi (Webelement ScreenShot) */
+    //WebElement Resmi (Webelement ScreenShot)
+    public void webElementScreenShot(WebElement element){
+        String tarih = new SimpleDateFormat("_hh_mm_ss_ddMMyyyy").format(new Date());
+        String dosyaYolu = "src/test/java/techproed/ElementResmi/WEscreenShot" + tarih + ".jpeg";
+        try {
+            FileUtils.copyFile(element.getScreenshotAs(OutputType.FILE),new File(dosyaYolu));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
