@@ -36,7 +36,7 @@ SCREENSHOT
 -Üçüncü olarak FileUtils class'ından copyFile() methodu ile ts objemizi kullanarak getScreenShotAs methodu ile
 dosya yolunu belirteceğiz
  */
-        String filePath = "src/test/java/techproed/TumSayfaResmi/screenShot.png";
+        String filePath = "src/test/java/techproed/TumSayfaResmi/screenShot1.png";
         TakesScreenshot tss = (TakesScreenshot) driver;
         FileUtils.copyFile(tss.getScreenshotAs(OutputType.FILE),new File(filePath));
 
