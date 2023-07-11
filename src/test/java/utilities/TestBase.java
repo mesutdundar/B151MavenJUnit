@@ -1,5 +1,8 @@
 package utilities;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
@@ -9,6 +12,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.*;
 
+import java.awt.*;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -22,6 +28,9 @@ public abstract class TestBase {
     //Bu class'a extends ettigimiz test classlarindan ulasabiliriz
     ////Testbase clasına extdends ettiğimiz test classlarından ulaşabiliriz.
    protected WebDriver driver;
+   protected ExtentReports extentReports; // ==> ExtentReports ==> raporlamayi baslatmak icin kullanilan class
+   protected ExtentHtmlReporter extentHtmlReporter; // ==> ExtentHtml ==> raporlamayi HTML formatinda duzenler
+   protected ExtentTest extentTest ; // ==> ExtentTest ==> Test adimlarina eklemek istedigimiz bilgileri bu class ile duzenleriz
     @Before
     public void setUp() throws Exception {
         WebDriverManager.chromedriver().setup();
@@ -32,6 +41,8 @@ public abstract class TestBase {
 
       @After
     public void tearDown() throws Exception {
+        extentReports =new ExtentReports();//(asagidakiyle berabaer kullanilir!!!!!!)
+        extentReports.flush(); // extent report sonlandirma methodu. unutmayayim diye buraya koydum
         driver.quit();
     }
 
@@ -121,5 +132,76 @@ public abstract class TestBase {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+    /**  UploadFile Robot Class  */
+    public void uploadFilePath(String filePath) {
+        try {
+            bekle(3);
+            StringSelection stringSelection = new StringSelection(filePath);
+            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_CONTROL);
+            bekle(3);
+            robot.keyPress(KeyEvent.VK_V);
+            bekle(3);
+            robot.keyRelease(KeyEvent.VK_CONTROL);
+            bekle(3);
+            robot.keyRelease(KeyEvent.VK_V);
+            bekle(3);
+            robot.keyPress(KeyEvent.VK_ENTER);
+            bekle(3);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            bekle(3);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    /**  Extent Report methodu */
+    public void extentReport(String browser,String reportName,String testerName){
+        extentReports = new ExtentReports();
+        String tarih = new SimpleDateFormat("_hh_mm_ss_ddMMyyyy").format(new Date());
+        String dosyaYolu = "testOutput/extentReports/extentReport"+tarih+".html";
+        extentHtmlReporter = new ExtentHtmlReporter(dosyaYolu);
+        extentReports.attachReporter(extentHtmlReporter);
+
+        extentReports.setSystemInfo("Browser",browser);
+        extentReports.setSystemInfo("Tester",testerName);
+        extentHtmlReporter.config().setDocumentTitle("Extent Report");
+        extentHtmlReporter.config().setReportName(reportName);
+    }
+    /** JavaScriptExecuter click*/
+    public void click (WebElement element){
+        try {
+            element.click();
+        } catch (Exception e) {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();",element);
+        }
+    }
+    /** JavaScriptExecuter scroll*/
+    public void scroll(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);",element);    }
+
+    public void scrollHome (){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,-document.body.scrollHeight)");
+    }
+    public void scrollEnd(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+
+    }
+    public void sendKeysJS(WebElement element, String text){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].value='"+text+"'",element);
+
+    }
+    public void sendAttributeJS(WebElement element,String text){
+
+        JavascriptExecutor js= (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].setAttribute('value','"+text+"')",element);
     }
 }

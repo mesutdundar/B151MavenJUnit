@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f53aea12-4213-4ee3-b185-21c21018b691" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;pom.xml" />
+    <list default="true" id="f53aea12-4213-4ee3-b185-21c21018b691" name="Changes" comment="elementResmi">
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/Capitals.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/TumSayfaResmi/screenShot_02_06_25_07072023.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day19_ExtentReport_WebTables/C01_ExtentReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day19_ExtentReport_WebTables/C02_ExtentReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day19_ExtentReport_WebTables/C03_WebTables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day20_WebTables_Excel/C01_WebTables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day20_WebTables_Excel/C02_ExcelRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day21_Excel_JSExecuter/C01_ExcelRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day21_Excel_JSExecuter/C02_ExcelWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day21_Excel_JSExecuter/C03_JSExecuter_Click.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day22_JSExecuter/C01_JSExecuter_Scroll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day22_JSExecuter/C02_JSExecuter_Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day22_JSExecuter/C03_JSExecuter_GetValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testOutput/extentReports/extentReport_01_21_25_07072023.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testOutput/extentReports/extentReport_02_06_18_07072023.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenShot/screenShot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/techproed/TumSayfaResmi/screenShot1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techproed/ScreenShot/screenShot.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +41,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/techproed/day20_WebTables_Excel/C02_ExcelRead.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/techproed/day21_Excel_JSExecuter/C01_ExcelRead.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,83 +68,91 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/javademos/B151MavenJUnit/src/test/java/resources&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.C05_ScreenShotClassWork.screenShot">
-    <configuration name="C01_TumSayfaResmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\javademos\B151MavenJUnit\src\test\java\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.C01_JSExecuter_Scroll.test01">
+    <configuration name="C01_ExcelRead.readExcelTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="B151MavenJUnit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="techproed.day18_ScreenShot.*" />
+          <option name="PATTERN" value="techproed.day21_Excel_JSExecuter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="techproed.day18_ScreenShot" />
-      <option name="MAIN_CLASS_NAME" value="techproed.day18_ScreenShot.C01_TumSayfaResmi" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C01_TumSayfaResmi.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="B151MavenJUnit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="techproed.day18_ScreenShot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="techproed.day18_ScreenShot" />
-      <option name="MAIN_CLASS_NAME" value="techproed.day18_ScreenShot.C01_TumSayfaResmi" />
-      <option name="METHOD_NAME" value="test02" />
+      <option name="PACKAGE_NAME" value="techproed.day21_Excel" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day21_Excel_JSExecuter.C01_ExcelRead" />
+      <option name="METHOD_NAME" value="readExcelTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C02_TumSayfaResmi.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C01_ExcelRead.readExcelTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="B151MavenJUnit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="techproed.day18_ScreenShot.*" />
+          <option name="PATTERN" value="techproed.day21_Excel_JSExecuter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="techproed.day18_ScreenShot" />
-      <option name="MAIN_CLASS_NAME" value="techproed.day18_ScreenShot.C02_TumSayfaResmi" />
+      <option name="PACKAGE_NAME" value="techproed.day21_Excel" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day21_Excel_JSExecuter.C01_ExcelRead" />
+      <option name="METHOD_NAME" value="readExcelTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C01_JSExecuter_Scroll.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="B151MavenJUnit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="techproed.day22_JSExecuter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="techproed.day22_JSExecuter" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day22_JSExecuter.C01_JSExecuter_Scroll" />
       <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C05_ScreenShotClassWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C02_ExcelRead.readExcelTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="B151MavenJUnit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="techproed.day18_ScreenShot.*" />
+          <option name="PATTERN" value="techproed.day20_WebTables_Excel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="techproed.day18_ScreenShot" />
-      <option name="MAIN_CLASS_NAME" value="techproed.day18_ScreenShot.C05_ScreenShotClassWork" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="techproed.day20_WebTables_Excel" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day20_WebTables_Excel.C02_ExcelRead" />
+      <option name="METHOD_NAME" value="readExcelTest3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C05_ScreenShotClassWork.screenShot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C02_ExcelWrite.excelWriteTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="B151MavenJUnit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="techproed.day18_ScreenShot.*" />
+          <option name="PATTERN" value="techproed.day21_Excel_JSExecuter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="techproed.day18_ScreenShot" />
-      <option name="MAIN_CLASS_NAME" value="techproed.day18_ScreenShot.C05_ScreenShotClassWork" />
-      <option name="METHOD_NAME" value="screenShot" />
+      <option name="PACKAGE_NAME" value="techproed.day21_Excel" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day21_Excel_JSExecuter.C02_ExcelWrite" />
+      <option name="METHOD_NAME" value="excelWriteTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.C05_ScreenShotClassWork.screenShot" />
-        <item itemvalue="JUnit.C05_ScreenShotClassWork" />
-        <item itemvalue="JUnit.C02_TumSayfaResmi.test01" />
-        <item itemvalue="JUnit.C01_TumSayfaResmi" />
-        <item itemvalue="JUnit.C01_TumSayfaResmi.test02" />
+        <item itemvalue="JUnit.C01_JSExecuter_Scroll.test01" />
+        <item itemvalue="JUnit.C02_ExcelWrite.excelWriteTest1" />
+        <item itemvalue="JUnit.C01_ExcelRead.readExcelTest2" />
+        <item itemvalue="JUnit.C01_ExcelRead.readExcelTest1" />
+        <item itemvalue="JUnit.C02_ExcelRead.readExcelTest3" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687660325106</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="elementResmi">
+      <created>1687660625093</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687660625093</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +236,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;pom.xml" />
+    <MESSAGE value="elementResmi" />
+    <option name="LAST_COMMIT_MESSAGE" value="elementResmi" />
   </component>
 </project>
