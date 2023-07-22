@@ -16,6 +16,7 @@
     <!-- TUM DEPENDENCY LERI DEPENDENCY TAG'I ICINE KOYMAMIZ GEREKIR(ASAGIDAKI GIBI) -->
     <!-- FIRST :selenium java suruculeri kontrol etmek icin gereken java siniflarini ve methodlarini icerir -->
     <dependencies>
+        <!-- selenium -java dependency-->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -29,6 +30,7 @@
             <artifactId>webdrivermanager</artifactId>
             <version>5.3.2</version>
         </dependency>
+        <!-- juinit dependency -->
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
@@ -65,6 +67,20 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>5.2.3</version>
+        </dependency>
+<!-- Bu da log4j kullanabilmek icin icin -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+    <!-- log4j kayitlari olusturmak ve yonetmek icin  -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.17.2</version>
         </dependency>
 
     </dependencies>

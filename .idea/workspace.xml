@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f53aea12-4213-4ee3-b185-21c21018b691" name="Changes" comment="elementResmi">
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/Capitals.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/TumSayfaResmi/screenShot_02_06_25_07072023.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day19_ExtentReport_WebTables/C01_ExtentReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day19_ExtentReport_WebTables/C02_ExtentReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day19_ExtentReport_WebTables/C03_WebTables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day20_WebTables_Excel/C01_WebTables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day20_WebTables_Excel/C02_ExcelRead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day21_Excel_JSExecuter/C01_ExcelRead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day21_Excel_JSExecuter/C02_ExcelWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day21_Excel_JSExecuter/C03_JSExecuter_Click.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day22_JSExecuter/C01_JSExecuter_Scroll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day22_JSExecuter/C02_JSExecuter_Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day22_JSExecuter/C03_JSExecuter_GetValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testOutput/extentReports/extentReport_01_21_25_07072023.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testOutput/extentReports/extentReport_02_06_18_07072023.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day23_Log4j/C01_Log4j.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShot/screenShot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/techproed/TumSayfaResmi/screenShot1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/techproed/ScreenShot/screenShot.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,36 +49,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/javademos/B151MavenJUnit/src/test/java/resources&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/javademos/B151MavenJUnit/src/test/java/resources"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\javademos\B151MavenJUnit\src\test\java\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.C01_JSExecuter_Scroll.test01">
-    <configuration name="C01_ExcelRead.readExcelTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="B151MavenJUnit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="techproed.day21_Excel_JSExecuter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="techproed.day21_Excel" />
-      <option name="MAIN_CLASS_NAME" value="techproed.day21_Excel_JSExecuter.C01_ExcelRead" />
-      <option name="METHOD_NAME" value="readExcelTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.C01_Log4j.log4j">
     <configuration name="C01_ExcelRead.readExcelTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="B151MavenJUnit" />
       <extension name="coverage">
@@ -126,17 +96,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C02_ExcelRead.readExcelTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C01_Log4j" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="B151MavenJUnit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="techproed.day20_WebTables_Excel.*" />
+          <option name="PATTERN" value="techproed.day23_Log4j.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="techproed.day20_WebTables_Excel" />
-      <option name="MAIN_CLASS_NAME" value="techproed.day20_WebTables_Excel.C02_ExcelRead" />
-      <option name="METHOD_NAME" value="readExcelTest3" />
+      <option name="PACKAGE_NAME" value="techproed.day23_Log4j" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day23_Log4j.C01_Log4j" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C01_Log4j.log4j" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="B151MavenJUnit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="techproed.day23_Log4j.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="techproed.day23_Log4j" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day23_Log4j.C01_Log4j" />
+      <option name="METHOD_NAME" value="log4j" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.C01_Log4j.log4j" />
+        <item itemvalue="JUnit.C01_Log4j" />
         <item itemvalue="JUnit.C01_JSExecuter_Scroll.test01" />
         <item itemvalue="JUnit.C02_ExcelWrite.excelWriteTest1" />
         <item itemvalue="JUnit.C01_ExcelRead.readExcelTest2" />
-        <item itemvalue="JUnit.C01_ExcelRead.readExcelTest1" />
-        <item itemvalue="JUnit.C02_ExcelRead.readExcelTest3" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687660625093</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="elementResmi">
+      <created>1689073324408</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689073324408</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

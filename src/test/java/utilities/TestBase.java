@@ -7,11 +7,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.*;
-
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
@@ -33,6 +31,7 @@ public abstract class TestBase {
    protected ExtentTest extentTest ; // ==> ExtentTest ==> Test adimlarina eklemek istedigimiz bilgileri bu class ile duzenleriz
     @Before
     public void setUp() throws Exception {
+
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -50,7 +49,7 @@ public abstract class TestBase {
 /** Thread.sleep methodu */
     public void bekle (int saniye) {
         try {
-            Thread.sleep(saniye *1000);
+            Thread.sleep(saniye * 1000L);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
